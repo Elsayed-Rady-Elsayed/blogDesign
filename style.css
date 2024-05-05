@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgba(255, 235, 205,.2);
+    font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+}
+.header{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.header h1{
+    font-weight: 500;
+    font-size: 28px;
+}
+.header p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.header p span{
+    background-color: black;
+    color: white;
+    padding: 2px 3px;
+    font-size: 12px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+@media screen and (max-width:776px) {
+    .container {
+        width: 95%;
+    }
+}
+.left{
+    float: left;
+    width: 66%;
+}
+.left .top , .left .bottom,.right .popularDeals,.tags{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+.left img{
+    width: 100%;
+    object-fit: cover;
+}
+.left .content,.right .content{
+    padding: 10px;
+}
+.left .content h2,.right .first-card .content h2{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.left .content p{
+    font-size: 14px;
+}
+.left .content p span{
+    font-size: 12px;
+    color: #878787;
+}
+.left .content .desc,.right .first-card .content p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #777777;
+    font-weight: 100;
+}
+.left .content .top-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left .content .top-footer button{
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+}
+.left .content .top-footer button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.left .content .top-footer button span{
+    font-size: 8px;
+    margin-left:5px;
+}
+.left .content .top-footer .comment{
+    display: flex;
+    align-items: center;
+}
+.left .content .top-footer .comment p{
+    font-size: 12px;
+    margin-right: 5px;
+}
+.left .content .top-footer .comment .count{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    padding: 2px 4px;
+    font-size: 11px;
+}
+.left .bottom .content .comment .count{
+    border-radius: 50%;
+}
+.right{
+    margin-left: 4%;
+    float: left;
+    width: 30%;
+}
+.right .first-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+.right .popularDeals{
+
+}
+.right .popularDeals .header,.tags .header{
+    background-color: #f0f0f0;
+    font-size: 14px;
+    font-weight: 200;
+    color: black;
+    padding: 13px 5px;
+    text-align: start;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.right .popularDeals .body{
+
+}
+.right .popularDeals .body .card{
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+    transition: .2s;
+}
+.right .popularDeals .body .card:hover{
+    background-color: #777777;
+}
+.right .popularDeals .body .card::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e0dede;
+}
+.right .popularDeals .body .card img{
+    width: 40px;
+    height: 40px;
+}
+.right .popularDeals .body .card .text{
+}
+.right .popularDeals .body .card .text h3{
+    font-size: 13px;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+.right .popularDeals .body .card .text p{
+    font-size: 10px;
+}
+.tags .body{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 8px;
+}
+.tags .body p{
+    font-size: 11px;
+    margin: 3px;
+    background-color: #eee;
+    padding: 3px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+.tags .body p:hover{
+    background-color: black;
+    color: white;
+}
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.footer{
+    padding: 15px;
+    margin-top: 10px;
+    height: 100px;
+    background-color: rgb(44, 41, 41);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .pagination{
+    color: white;
+}
+.footer .pagination button{
+    width: 100px;
+    padding: 10px 0;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: .3s;
+}
+.footer .pagination button:hover{
+    background-color: black;
+
+}
+@media screen and (max-width:544px) {
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        margin: 0;
+    }
+}
